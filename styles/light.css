@@ -17,3 +17,19 @@
   --color-text: #353430;
   --button-color-border: rgba(53, 52, 48, 0.4); 
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --bg-pattern: url(../images/cover-image-light.png);
+  --bg-color: #ffc2e6;
+  --rec-block: none;
+  --button-color: #353430;
+  --title-color: #ffc2e6;
+  --color-item-title: #353430;
+  --color-header-text: #353430;
+  --bg-title: #ff8dcb;
+  --color-content-title: #353430;
+  --color-text: #353430;
+  --button-color-border: rgba(53, 52, 48, 0.4); 
+  }
+}
