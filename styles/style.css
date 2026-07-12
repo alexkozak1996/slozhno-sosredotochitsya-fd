@@ -230,3 +230,190 @@
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--bg-title);
 }
+
+
+@media (width >= 768px) {
+  .header {
+    min-height: 1024px;
+    margin-bottom: 60px;
+  }
+
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__text {
+    justify-self: end;
+    max-width: 364px; 
+    margin: 20px 20px 25px;
+  }
+
+  .header__rec {
+    top: 20px;
+    right: 48px;
+  }
+
+  .decorated-zone::before {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .decorated-zone::after {
+    top: 20px;
+    right: 20px;
+  }
+
+  .header__theme-menu {
+    margin: 20px;
+  }
+
+  .main {
+    gap: 80px;
+    margin: 0 20px;
+  }
+
+  .content {
+    display: grid;
+    gap: 20px;
+  }
+
+  .content__column {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .content__column > .content__title {
+    grid-column: 1;
+  }
+
+  .content__column > .card__list {
+    grid-column: 2;
+  }
+
+  .content__row {
+    grid-template-columns: 1fr 3fr; 
+  }
+
+  .content__row > .content__title {
+    grid-column: 1;
+  }
+
+  .content__row > .card__item-title {
+    grid-column: span 2;
+  }  
+
+  .content__row > .card__list {
+    grid-column: span 2;
+  } 
+
+  .content__title {
+    margin-bottom: 0;
+  }
+
+  .card__item-text {
+    margin-top: 10px;
+  }
+
+  .card__list {
+    grid-column: auto;
+  }
+
+  .image__list li:nth-child(1) { 
+    grid-area: sunset;
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+
+  .image__list li:nth-child(2) { 
+    grid-area: ice-cream;
+    grid-column: 3;
+    grid-row: 1/3;
+  }
+
+  .image__list li:nth-child(3) { 
+    grid-area: tape;
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+
+  .image__list li:nth-child(4) { 
+    grid-area: books;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .image__list li:nth-child(5) { 
+    grid-area: street;
+    grid-column: 2/4;
+    grid-row: 3;
+  }
+
+  .image__list {
+    display: grid;
+    max-width: 100%;
+    grid-template-areas:
+      "sunset sunset ice-cream"
+      "tape books ice-cream"
+      "tape street street";
+    grid-template-columns: repeat(3, 1fr); 
+    margin-bottom: 70px;
+    gap: 20px;
+  }
+
+  .image__item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
+  .footer {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 1024px;
+  }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+@media (width >= 1024px) {
+  .header {
+    min-height: 768px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__text {
+    max-width: 491px;
+  }
+
+  .content__title {
+    min-width: 315px;
+  }
+  
+  .content__row > .card__list{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+
+  .content__column > .card__list {
+    max-width:100%;
+  }
+
+  .footer {
+    min-height: 768px;
+  }
+}
