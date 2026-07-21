@@ -17,19 +17,3 @@
   --color-text: #f1b2ce;
   --button-color-border: rgba(255, 0, 112, 0.4); 
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  --bg-pattern: url(../images/cover-image-dark.png);
-  --bg-color: #000028;
-  --rec-block: block;
-  --button-color: #ff0070;
-  --title-color: #db00ff;
-  --color-item-title: #000028;
-  --color-header-text: #000028;
-  --bg-title: #ff0070;
-  --color-content-title: #ff0070;
-  --color-text: #f1b2ce;
-  --button-color-border: rgba(255, 0, 112, 0.4); 
-  }
-}
